@@ -1,0 +1,13 @@
+contact: icesalov@redhat.com
+tag:
+  - NoRHEL4
+  - NoRHEL5
+  - NoTIP
+  - Tier2
+  - ci-tier-candidate
+tier: '2'
+extra-nitrate: TC#0533902
+extra-summary: '[basic] Redis test library (redis/basic)'
+id: 8ad363a5-5bf5-4182-8d8f-8824e995aa9c
+component::
+  - redis

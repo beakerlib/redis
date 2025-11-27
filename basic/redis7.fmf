@@ -1,0 +1,15 @@
+contact: icesalov@redhat.com
+environment:
+    MODSTREAMS: redis:7
+tag:
+  - Tier2
+tier: '2'
+adjust:
+  - enabled: false
+    when: distro < rhel-9.3
+    continue: false
+extra-summary: '[basic] Redis test library (redis/basic) [redis:7]'
+component:
+  - redis:7
+extra-nitrate: TC#0615324
+id: 1a4a158c-f923-4984-86d9-8e88204c1855

@@ -1,0 +1,22 @@
+contact: icesalov@redhat.com
+environment:
+    MODSTREAMS: redis:6
+tag:
+  - NoRHEL4
+  - NoRHEL5
+  - NoTIP
+  - Tier2
+  - ci-tier-candidate
+tier: '2'
+adjust:
+  - enabled: false
+    when: distro < rhel-8
+    continue: false
+  - enabled: false
+    when: distro ~< rhel-8.4
+    continue: false
+extra-nitrate: TC#0608366
+extra-summary: '[basic] Redis test library (redis/basic) [redis:6]'
+component:
+  - redis:6
+id: b529ce91-9793-4a8d-9d11-9c8d4b224915

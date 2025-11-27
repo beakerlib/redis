@@ -1,0 +1,16 @@
+summary: Redis test library
+description: ''
+contact: Jan Houska <jhouska@redhat.com>
+component: []
+test: ./runtest.sh
+path: /Library/basic
+framework: beakerlib
+recommend:
+  - redis
+duration: 10m
+enabled: true
+extra-summary: /CoreOS/redis/Library/basic
+extra-task: /CoreOS/redis/Library/basic
+check:
+  - how: avc
+    result: info
